@@ -1,0 +1,21 @@
+module rvbench
+
+go 1.26.0
+
+// Run `go mod tidy` on the client VM to pull the latest versions of:
+//   github.com/redis/go-redis/v9
+//   github.com/valkey-io/valkey-go
+//   github.com/HdrHistogram/hdrhistogram-go
+// Record the resolved versions from go.sum in your article's methodology section.
+
+require (
+	github.com/HdrHistogram/hdrhistogram-go v1.4.0
+	github.com/redis/go-redis/v9 v9.23.0
+	github.com/valkey-io/valkey-go v1.0.79
+)
+
+require (
+	github.com/cespare/xxhash/v2 v2.3.0 // indirect
+	go.uber.org/atomic v1.12.0 // indirect
+	golang.org/x/sys v0.48.0 // indirect
+)

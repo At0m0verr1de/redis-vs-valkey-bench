@@ -1,0 +1,53 @@
+{
+  "config": {
+    "mode": "bench",
+    "addr": "172.28.0.10:6379",
+    "client": "goredis",
+    "workers": 400,
+    "rate": 33988,
+    "duration": "30s",
+    "warmup": "5s",
+    "keys": 1000000,
+    "value_size": 1024,
+    "read_ratio": 0.8,
+    "dist": "uniform",
+    "pool": 0,
+    "multiplex": 0,
+    "seed": 101,
+    "engine": "redis",
+    "io_threads": 1,
+    "phase": "B",
+    "rep": 1
+  },
+  "server": {
+    "arch_bits": "64",
+    "config_io_threads": "1",
+    "io_threads_active": "0",
+    "module_count": "5",
+    "os": "Linux 6.12.105+ x86_64",
+    "redis_version": "8.8.4"
+  },
+  "server_end": {
+    "io_thread_0": "clients=161,reads=11094256,writes=11093420",
+    "io_threaded_reads_processed": "0",
+    "io_threaded_total_prefetch_batches": "1496376",
+    "io_threaded_total_prefetch_entries": "5376363",
+    "io_threaded_writes_processed": "0"
+  },
+  "started_at": "2026-11-11T18:53:25Z",
+  "ops": 1019640,
+  "errors": 0,
+  "achieved_rps": 33988,
+  "latency_us": {
+    "max": 27583,
+    "p50": 253,
+    "p90": 684,
+    "p99": 3383,
+    "p99.9": 11143,
+    "p99.99": 19679
+  },
+  "mean_us": 436.2072182338859,
+  "gomaxprocs": 16,
+  "loadavg_start": "10.65 12.71 13.42 12/26208 296",
+  "loadavg_end": "9.98 12.29 13.25 16/26208 311"
+}

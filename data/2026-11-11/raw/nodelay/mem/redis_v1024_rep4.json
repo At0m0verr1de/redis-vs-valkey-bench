@@ -1,0 +1,45 @@
+{
+  "config": {
+    "mode": "mem",
+    "addr": "172.28.0.10:6379",
+    "client": "goredis",
+    "workers": 50,
+    "rate": 0,
+    "duration": "30s",
+    "warmup": "5s",
+    "keys": 1000000,
+    "value_size": 1024,
+    "read_ratio": 0.8,
+    "dist": "uniform",
+    "pool": 0,
+    "multiplex": 0,
+    "seed": 42,
+    "engine": "redis",
+    "io_threads": 0,
+    "phase": "mem",
+    "rep": 4
+  },
+  "server": {
+    "arch_bits": "64",
+    "config_io_threads": "1",
+    "io_threads_active": "0",
+    "module_count": "5",
+    "os": "Linux 6.12.105+ x86_64",
+    "redis_version": "8.8.4"
+  },
+  "started_at": "2026-11-11T15:29:57Z",
+  "ops": 0,
+  "errors": 0,
+  "achieved_rps": 0,
+  "latency_us": null,
+  "mean_us": 0,
+  "memory": {
+    "bytes_per_key": 1326,
+    "used_memory_after": 1327637512,
+    "used_memory_before": 1535296,
+    "used_memory_rss": 1367330816
+  },
+  "gomaxprocs": 16,
+  "loadavg_start": "8.97 10.21 10.34 8/24849 210",
+  "loadavg_end": "8.97 10.19 10.33 61/24651 215"
+}

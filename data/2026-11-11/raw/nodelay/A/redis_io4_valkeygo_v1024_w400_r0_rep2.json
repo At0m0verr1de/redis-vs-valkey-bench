@@ -1,0 +1,56 @@
+{
+  "config": {
+    "mode": "bench",
+    "addr": "172.28.0.10:6379",
+    "client": "valkeygo",
+    "workers": 400,
+    "rate": 0,
+    "duration": "30s",
+    "warmup": "5s",
+    "keys": 1000000,
+    "value_size": 1024,
+    "read_ratio": 0.8,
+    "dist": "uniform",
+    "pool": 0,
+    "multiplex": 0,
+    "seed": 102,
+    "engine": "redis",
+    "io_threads": 4,
+    "phase": "A",
+    "rep": 2
+  },
+  "server": {
+    "arch_bits": "64",
+    "config_io_threads": "4",
+    "io_threads_active": "1",
+    "module_count": "5",
+    "os": "Linux 6.12.105+ x86_64",
+    "redis_version": "8.8.4"
+  },
+  "server_end": {
+    "io_thread_0": "clients=0,reads=0,writes=0",
+    "io_thread_1": "clients=2,reads=28133658,writes=28133646",
+    "io_thread_2": "clients=2,reads=29795660,writes=29796973",
+    "io_thread_3": "clients=1,reads=28101274,writes=28101353",
+    "io_threaded_reads_processed": "86030592",
+    "io_threaded_total_prefetch_batches": "27527163",
+    "io_threaded_total_prefetch_entries": "282503216",
+    "io_threaded_writes_processed": "86031972"
+  },
+  "started_at": "2026-11-11T16:01:37Z",
+  "ops": 22890185,
+  "errors": 0,
+  "achieved_rps": 763006.1666666666,
+  "latency_us": {
+    "max": 16879,
+    "p50": 493,
+    "p90": 752,
+    "p99": 1201,
+    "p99.9": 3103,
+    "p99.99": 6827
+  },
+  "mean_us": 523.4019445452257,
+  "gomaxprocs": 16,
+  "loadavg_start": "20.17 19.78 16.91 11/23788 1220",
+  "loadavg_end": "21.46 20.10 17.12 12/23820 1235"
+}

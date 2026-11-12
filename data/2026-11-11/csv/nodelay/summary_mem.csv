@@ -1,0 +1,10 @@
+engine,value_size,reps,bytes_per_key_median,bytes_per_key_min,bytes_per_key_max,module_count
+redis,32,5,85,85,85,5
+redis,100,5,158,158,158,5
+redis,1024,5,1326,1326,1326,5
+redisnomod,32,5,85,85,85,1
+redisnomod,100,5,158,158,158,1
+redisnomod,1024,5,1326,1326,1326,1
+valkey,32,5,80,80,80,1
+valkey,100,5,145,145,145,1
+valkey,1024,5,1329,1329,1329,1

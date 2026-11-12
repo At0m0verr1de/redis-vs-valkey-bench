@@ -1,0 +1,9 @@
+# build output
+bench/rvbench
+# your own runs (published data lives in data/)
+results/
+results-lan/
+run-all.log
+export/
+__pycache__/
+*.pyc
